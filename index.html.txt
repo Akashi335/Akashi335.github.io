@@ -1,0 +1,38 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>Museum-meep</title>  
+    <style>  
+        body {  
+            margin: 0;  
+            height: 100vh;  
+            display: flex;  
+            justify-content: center;  
+            align-items: center;  
+            background: #000;  
+        }  
+        .minion {  
+            width: 300px;  
+            height: 300px;  
+            border-radius: 50%;  
+            cursor: pointer;  
+            border: 5px solid yellow;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <img src="https://i.imgur.com/iDX4z3C.jpeg" class="minion" onclick="playSound()">  
+
+    <audio id="audio">  
+        <source src="https://drive.google.com/file/d/15_Cm_IfXUOneVto4NFOZrPlomnR_lCAr/view?usp=drive_link" type="audio/mpeg">  
+    </audio>  
+
+    <script>  
+        function playSound() {  
+            const audio = document.getElementById("audio");  
+            audio.volume = 1.0;
+            audio.play();
+        }  
+    </script>  
+</body>  
+</html>
